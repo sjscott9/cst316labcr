@@ -1,6 +1,12 @@
 package banking.primitive.core;
 
-
+/**
+ * File: AccountServerFactory.java
+ * Author: unknown
+ * Date: unknown
+ *
+ * Description: Factory class for creating a new account.
+ */
 public class AccountServerFactory {
 
 	protected static AccountServerFactory singleton = null;
