@@ -114,6 +114,7 @@ class ServerSolution implements AccountServer {
 				out.writeObject(accountMap.get(i));
 			}
 		} catch (IOException e) {
+			e.printStackTrace();
 			System.out.println("Could not write file:" + fileName);
 		} finally {
 			if (out != null) {
