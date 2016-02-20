@@ -30,7 +30,7 @@ class MainFrame extends JFrame {
 	public MainFrame(String propertyFile) throws IOException {
 
 		//** initialize myServer
-		myServer = AccountServerFactory.getMe().lookup();
+		myServer = AccountServerFactory.lookup();
 
 		props = new Properties();
 

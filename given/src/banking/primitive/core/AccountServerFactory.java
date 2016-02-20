@@ -8,22 +8,8 @@ package banking.primitive.core;
  * Description: Factory class for creating a new account.
  */
 public class AccountServerFactory {
-
-	protected static AccountServerFactory singleton = null;
-
-	protected AccountServerFactory() {
-
-	}
-
-	public static AccountServerFactory getMe() {
-		if (singleton == null) {
-			singleton = new AccountServerFactory();
-		}
-
-		return singleton;
-	}
-
-	public AccountServer lookup() {
+	
+	public static AccountServer lookup() {
 		return new ServerSolution();
 	}
 }
